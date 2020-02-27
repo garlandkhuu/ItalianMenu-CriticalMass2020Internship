@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Adine Kirnberg";
+  src: url("../assets/AdineKirnberg-Script.ttf");
+  font-style: normal;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: azure;
+}
+
+h1 {
+  font-family: "Adine Kirnberg";
+  font-size: 50px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-stretch: condensed;
+  border-bottom: solid 2px;
+  max-width: 530px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-stretch: condensed;
+}
+
+p {
+  font-style: italic;
+  font-size: 15px;
+}
+
+tr {
+  max-width: 200px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.item-name-cell {
+  display: flex;
+}
+
+.item-description {
+  margin-top: 5px;
+  max-width: 500px;
+}
+
+.spicy:before {
+  width: 16px;
+  height: 19px;
+  content: "";
+  background-image: url("../assets/spicy.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-right: 3px;
+  position: relative;
+  top: 2px;
+  background-color: #fdb5ac;
+  border-radius: 50%;
+}
+
+.spicy-indicator {
+  margin-left: 5px;
+  transform: translateY(-2px);
+}
+
+.spicy-btn-div {
+  text-align: center;
+}
+
+.spicy-btn {
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fae9e7;
+  line-height: 25px;
+  box-shadow: none;
+  transition: 0.15s;
+  padding-right: 9px;
+}
+
+.spicy-btn:focus {
+  outline: 0;
+}
+
+.spicy-btn:hover {
+  cursor: pointer;
+  background-color: #f7ddd9;
+}
+
+.spicy-btn:active {
+  background-color: #fdb5ac;
+}
+
+.active {
+  background-color: #fdb5ac !important;
+}
+
+.spicy-btn .spicy {
+  display: inherit;
+  transform: translateY(2px);
+}
+.spicy-btn .spicy::before {
+  background-color: none;
+}
+
+.disclaimer {
+  padding-top: 5px;
+  text-align: center;
+  border-top: solid 2px;
+}
